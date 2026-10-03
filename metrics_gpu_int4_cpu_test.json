@@ -1,0 +1,61 @@
+{
+  "artifact": "/content/text-gen-model/artifacts/gpu_int4",
+  "hardware": {
+    "cpu": "AMD EPYC 7B13",
+    "avx2": true,
+    "cuda_available": false
+  },
+  "generation": {
+    "engine": "PyTorch/gpu_int4/cpu/émulation-fp32",
+    "device": "cpu",
+    "cpu_fallback": true,
+    "prompt_tokens": 7,
+    "prompt_tokens_used": 7,
+    "new_tokens": 24,
+    "seconds": 0.9835063619998436,
+    "tokens_per_second": 24.402485766537232,
+    "prefill_seconds": 0.10181917299996712,
+    "decode_seconds": 0.881647480000538,
+    "decode_tokens_per_second": 26.08752423359273,
+    "kv_cache": true,
+    "cache_resets": 0,
+    "stopped_on_eos": false
+  },
+  "benchmark": {
+    "runs": [
+      {
+        "engine": "PyTorch/gpu_int4/cpu/émulation-fp32",
+        "device": "cpu",
+        "cpu_fallback": true,
+        "prompt_tokens": 7,
+        "prompt_tokens_used": 7,
+        "new_tokens": 32,
+        "seconds": 1.2227823060002265,
+        "tokens_per_second": 26.16982584960145,
+        "prefill_seconds": 0.04287046699982966,
+        "decode_seconds": 1.1798670479997782,
+        "decode_tokens_per_second": 26.27414677997332,
+        "kv_cache": true,
+        "cache_resets": 0,
+        "stopped_on_eos": false
+      }
+    ],
+    "median_tokens_per_second": 26.16982584960145,
+    "median_decode_tokens_per_second": 26.27414677997332,
+    "peak_cuda_allocated_bytes": null,
+    "notes": "Chargement exclu ; préremplissage, sampling et transferts logits inclus ; EOS ignoré."
+  },
+  "evaluation": {
+    "engine": "PyTorch/gpu_int4/cpu/émulation-fp32",
+    "loss": 2.9466238171934944,
+    "perplexity": 19.041557303971828,
+    "evaluated_tokens": 512
+  },
+  "baseline_fp32": {
+    "engine": "PyTorch/base/cpu",
+    "loss": 2.9442862412311603,
+    "perplexity": 18.997098200842725,
+    "evaluated_tokens": 512
+  },
+  "relative_perplexity_change": 0.0023403102231229767
+}

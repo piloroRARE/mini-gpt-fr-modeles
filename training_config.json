@@ -1,0 +1,16 @@
+{
+  "steps": 3000,
+  "batch_size": 16,
+  "grad_accum": 2,
+  "learning_rate": 0.0003,
+  "min_learning_rate": 3e-05,
+  "warmup_steps": 150,
+  "weight_decay": 0.1,
+  "grad_clip": 1.0,
+  "eval_every": 200,
+  "eval_batches": 8,
+  "checkpoint_every": 500,
+  "log_every": 20,
+  "seed": 42,
+  "precision": "bfloat16"
+}

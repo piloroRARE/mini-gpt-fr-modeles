@@ -1,0 +1,22 @@
+{
+  "cpu_dynamic": {
+    "format": "pytorch_dynamic_int8",
+    "weights_bytes": 101742354,
+    "weights_mib": 97.029
+  },
+  "cpu_static": {
+    "format": "onnx_qdq_int8",
+    "weights_bytes": 102620359,
+    "weights_mib": 97.866
+  },
+  "gpu_int4": {
+    "format": "awq_style_int4",
+    "weights_bytes": 47270494,
+    "weights_mib": 45.081
+  },
+  "gpu_high": {
+    "format": "pytorch_fp16",
+    "weights_bytes": 119353775,
+    "weights_mib": 113.825
+  }
+}
